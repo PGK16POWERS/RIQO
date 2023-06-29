@@ -1,0 +1,707 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+button {
+    cursor: pointer;
+}
+body {
+    position: relative;
+    background-color: rgb(232,232,232);
+    overflow-x: hidden;
+}
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --nunito: 'Nunito', sans-serif;
+}
+/**** HEADER ****/
+header {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    box-shadow: 1px 1px 6px 2px rgba(198, 198, 198, 0.168);
+}
+.brand-logo {
+    width: 180px;
+}
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+.line-nav {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    height: 4px;
+    background-color: #7a7a7b;
+}
+.exman {
+    display: none;
+}
+.x-line {
+    display: none;
+}
+nav {
+    position: absolute;
+    padding: 1rem;
+    top: 10vh;
+    right: 0;
+    left:0;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 52vh;
+    display: none;
+    z-index: 3;
+}
+.show {
+    display: block !important;
+}
+.showflex {
+    display: flex !important;
+}
+.nav-ul {
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.3rem;
+    height: 100%;
+}
+.nav-link {
+    font-family: var(--nunito);
+    font-size: 1.7em;
+    color:rgb(60, 60, 61);
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.nav-link:active ,
+.nav-link:hover {
+    color:rgb(255, 255, 255);
+}
+/**** HEADER ****/
+/**** LANDING SECTION ****/
+.landing {
+    padding: 1rem; 
+    min-height: 80vh;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 2.3em;
+    letter-spacing: 1.3px;
+    color: #3c3c3d;
+    font-family: 'Poppins', sans-serif;
+}
+.lp-para {
+    text-align: center;
+    font-size: 1.3em;
+    width: 85%;
+    
+    line-height: 25px;
+}
+.lp-img {
+    width: 90vh;
+}
+.lp-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.local-para {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+    color: rgb(84,85,87);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.lp-div-btn {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    margin-top: 1rem;
+}
+.lp-btn {
+    padding: 1rem 2rem;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.Cre-acc {
+    background-color: rgb(2, 133, 233);
+    color: rgb(255, 255, 255);
+}
+.Cre-acc:active,
+.Cre-acc:hover {
+    background-color: rgb(7, 129, 251);
+    box-shadow: 0 1px 5px 1px rgb(95, 186, 243);
+}
+.try-demo {
+    background-color: rgb(166,166,166);
+    color: rgb(255,255,255);
+}
+.try-demo:active,
+.try-demo:hover {
+    background-color: rgb(166, 163, 163);
+    box-shadow: 0 1px 5px 1px rgb(164, 167, 167);
+}
+#blckt {
+    background-color:#b9bfc1;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    color:#ffffff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+/**** LANDING SECTION ****/
+/**** FEATURES ****/
+.features {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.feature-block {
+    display: flex;
+    justify-content: flex-start;
+    border:2px solid transparent;
+    column-gap: 1rem;
+    border-radius: 16px;
+    padding: 0.7rem;
+    width: 400px;
+    background-color: rgb(246,246,246);
+}
+.feat-header {
+    color: rgb(60, 60, 61);
+    font-family: var(--poppins);
+    font-weight: 400;
+}
+.div-det {
+    text-align: left;
+    width: 90%;
+}
+.feat-img {
+    width: 8vw;
+}
+.divp {
+    font-size: 0.8em;
+}
+/**** FEATURES ****/
+/**** DEMO SECTION ****/
+.demo-sect {
+    min-height: 30vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+.quote-div {
+    border: 2px solid transparent;
+    background-color: #f6f6f6;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px 16px 0 16px;
+    width: 70vw;
+}
+#ri-qo {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    color:rgb(154, 154, 154);
+}
+#gen-btn {
+    font-family: 'Nunito', sans-serif;
+    color:rgb(86, 86, 86);
+    letter-spacing: 1px;
+    padding: 0.7rem 3rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: rgb(204, 205, 205);
+    cursor: pointer;
+}
+/**** DEMO SECTION ****/
+/**** FOOTER ****/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: var(--nunito);
+    padding: 1rem;
+}
+.foot-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divline {
+    height: 2px;
+    width: 60%;
+    background-color: rgb(229, 229, 229);
+}
+.foot-parent-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+}
+.con-container {
+    display: flex;
+    flex-direction:column;
+    padding: 0.3rem 0;
+    row-gap: 0.4rem;
+}
+.footer-link {
+    color:rgb(60, 60, 61);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+/**** FOOTER ****/
+/**** FAQ PAGE ****/
+.faq {
+    padding: 1rem; 
+    min-height: 80vh;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+.faq-que {
+    padding: 1rem;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.faq-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    padding: 1rem;
+    width:70vw;
+}
+.faq3-header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+.faq-para {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+}
+/**** FAQ PAGE ****/
+/**** PACKAGE PAGE ****/
+.packages-page {
+    background-color: #947f57;
+    min-height: 30vh;
+}
+.al-pack {
+    display: flex;
+    align-items: center;
+    flex-flow: row rwap;
+    column-gap: 1rem;
+    min-height: 50vh;
+
+}
+.pack4ge {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 30vh;
+    min-width: 20vw;
+    text-align: center;
+}
+.pack4ge:hover,
+.pack4ge:active {
+    outline: 5px solid #a4a4a5;
+}
+.packages-header {
+    font-family: var(--nunito);
+    font-size: 2.5em;
+    font-weight: 400;
+    color: white;
+}
+.pac-para {
+    font-family: var(--nunito);
+    color: #e8e8e8;
+}
+.ai {
+    margin-top: 0.1rem;
+    font-family: var(--nunito);
+    font-weight: 100;
+    color: #3d3d3d;
+}
+.p2-header {
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-family: var(--nunito);
+    font-weight: 400;
+    color: #3d3d3d;
+}
+.pack-line {
+    height: 2px;
+    width: 100%;
+    color: #947f57;
+    margin: 0.3rem 0;
+}
+.p4l {
+    margin: 0 1.5rem;
+    transform: scale(120%);
+    outline: 2px solid rgba(255, 217, 0, 0.578);
+}
+.p4l:hover,
+.p4l:active {
+    outline: 5px solid rgba(255, 217, 0, 0.578);
+}
+.price {
+    font-weight: 500;
+    font-size: 3.5em;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    color: #3d3d3d;
+}
+small {
+    color: #3d3d3d;
+    position: absolute;
+    bottom: 3px;
+}
+/**** PACKAGE PAGE ****/
+/**** form ****/
+.suf-body {
+    height: 100vh;
+}
+#formparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#form, #form2 {
+    font-family: var(--nunito);
+    width: 350px;
+    padding: 1rem 2rem;
+    display: flex;
+    row-gap: 1.1rem;
+    flex-direction: column;
+    align-items: left;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+}
+.form-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem
+}
+.div-for-det {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem
+}
+.frm-label {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color:#505050 ;
+    font-weight: 300;
+}
+.suf-header {
+    font-size:1.7em;
+    font-family: var(--nunito);
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: rgb(39, 50, 58);
+}
+.frm-inp {
+    padding: 8px 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+#cre-btn-frm {
+    align-self: center;
+    width: 80%;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 0.7rem 0;
+    border:2px solid transparent;
+    background-color: dodgerblue;
+    color:rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.frm-redi {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-family: var(--nunito);
+}
+.redi-home {
+    position: absolute;
+    bottom: 2vh;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    font-weight: 300;
+    font-family: var(--nunito);
+    color:rgb(175, 175, 175);
+    transition: 0.3s;
+}
+.redi-home:active,
+.redi-home:hover {
+    color:rgb(30, 30, 30);
+}
+/**** form ****/
+@media (max-width: 900px) {
+    /**** HEADER SECTION ****/
+    header {
+        position: relative;
+        background-color: rgb(236, 236, 236);
+        height: 10vh;
+        padding: 0 1.5rem;
+    }
+    nav {
+        position: absolute;
+        padding: 1rem;
+        row-gap: 1rem;
+        top: 10vh;
+        right: 0;
+        left:0;
+        background-color:  rgb(236, 236, 236);
+        text-align: center;
+        display: none;
+        z-index: 3;
+    }
+    .brand-logo {
+        width: 140px;
+    }
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+    }
+    /**** HEADER SECTION ****/
+    /**** LANDING SECTION ****/
+    .landing {
+        padding: 1rem; 
+        min-height: 70vh;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .lp-img {
+        width: 90%;
+    }
+    .lp-btn {
+        padding: 0.9rem 1.3rem;
+        font-size: 1.1em;
+    }
+    .lp-div-btn {
+        column-gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    /**** LANDING SECTION ****/
+    /**** FEATURES SECTION ****/
+    .features {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .feature-block {
+        display: flex;
+        justify-content: flex-start;
+        border:2px solid transparent;
+        column-gap: 1rem;
+        border-radius: 16px;
+        padding: 0.7rem;
+        background-color: rgb(246,246,246);
+    }
+    .feat-header {
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: rgb(60, 60, 61);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    .div-det {
+        text-align: left;
+        width: 90%;
+    }
+    .feat-img {
+        width: 30%;
+    }
+    .divp {
+        font-size: 0.8em;
+    }
+    /**** FEATURES SECTION ****/
+    /**** FAQ PAGE ****/
+    .faq {
+        padding: 1rem; 
+        min-height: 80vh;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+    }
+    .faq-que {
+        padding: 1rem;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .faq-header {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2em;
+        letter-spacing: 1px;
+        padding: 1rem;
+        width: 90vw;
+        font-weight: 500;
+    }
+    .faq3-header {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.3em;
+        letter-spacing: 1px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .faq-para {
+        font-size: 1em;
+        letter-spacing: 1px;
+        font-family: 'Nunito', sans-serif;
+        display: block;
+    }
+    /**** FAQ PAGE ****/
+    /**** PACKAGE PAGE ****/
+.packages-page {
+    background-color: #947f57;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.al-pack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    row-gap: 2rem;
+}
+.pack4ge {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 30vh;
+    width: 16rem;
+    text-align: center;
+}
+.pack4ge:hover,
+.pack4ge:active {
+    outline: 5px solid #a4a4a5;
+}
+.packages-header {
+    font-family: var(--nunito);
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+}
+.pac-para {
+    display: block !important;
+    color: #e8e8e8;
+    text-align: center;
+}
+.ai {
+    margin-top: 0.1rem;
+    font-family: var(--nunito);
+    font-weight: 100;
+    color: #3d3d3d;
+}
+.p2-header {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    font-family: var(--nunito);
+    font-weight: 400;
+    color: #3d3d3d;
+}
+.pack-line {
+    height: 2px;
+    width: 100%;
+    color: #947f57;
+}
+.p4l {
+    margin: 0 1.5rem;
+    transform: scale(103%);
+    outline: 2px solid rgba(255, 217, 0, 0.578);
+    background-color: rgb(255, 253, 240);
+}
+.p4l:hover,
+.p4l:active {
+    outline: 5px solid rgba(255, 217, 0, 0.578);
+}
+.price {
+    font-weight: 500;
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    color: #3d3d3d;
+}
+small {
+    color: #3d3d3d;
+    position: absolute;
+    bottom: 3px;
+}
+/**** PACKAGE PAGE ****/
+}
