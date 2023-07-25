@@ -7,7 +7,6 @@ app.use(express.static("javascriptModules"));
 app.use(express.static("stylesfolder"));
 app.use(express.static("photos"))
 
-
 app.listen(2300, () => {
     console.log("Up it like Its cheese");
 })
