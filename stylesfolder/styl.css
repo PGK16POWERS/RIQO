@@ -229,6 +229,9 @@ body {
 .features-div div:nth-child(4) p{
     color: #b62e00;
 }
+.expansion-div {
+    width: 100%;
+}
 .expansion-div h3 {
     font-size: 1.2em;
     letter-spacing: 1px;
@@ -257,12 +260,20 @@ body {
     background-color: #D9D9D9;
 }
 #demo-feature-div {
-    display: none;
-}hats
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    justify-content: center;
+    border: 2px solid black;
+    width: 100%;
+}
 
 .qoute-block {
     border: 0 solid transparent;
-    border-radius: 5;
+    padding: 1rem;
+    width: 300px;
+    border-radius: 5px;
     background-color:  #D9D9D9;
 }
 
