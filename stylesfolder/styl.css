@@ -23,6 +23,9 @@ body {
     --pops: 'Poppins', sans-serif;
     --nuns: 'Nunito', sans-serif;
 }
+.showflex {
+    display: flex !important;
+}
 /**** HEADER SECTION ****/
 #header {
     position:-webkit-sticky;
@@ -46,6 +49,31 @@ body {
 }
 #close {
     display: none;
+}
+nav {
+    display: none;
+    position: absolute;
+    top: 12vh;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f8f6f6;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-link {
+    font-family: var(--pops);
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: rgb(150, 150, 150);
 }
 /**** HEADER SECTION ****/
 
@@ -105,6 +133,23 @@ body {
     font-family: var(--monts);
     color: white;
 }
+@media (max-width: 800px) {
+    .hero-content h1 {
+        font-size: 1.4em;
+        letter-spacing: 2px;
+        font-family: var(--monts);
+        font-weight: 600;
+        color: #7a7a7ad3
+    }
+    .hero-content p {
+        font-size: 1em;
+        letter-spacing: 1.5px;
+        font-family: var(--pops);
+        line-height: 28px;
+        font-weight: 200;
+        color: #787777e0
+    }
+}
 /**** HERO SECTION ****/
 
 /**** ABOUT SECTION ****/
@@ -113,7 +158,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem
+    gap: 1.5rem;
+    margin: 3rem 0
 }
 #about-section h2 {
     font-size: 1.8em;
@@ -137,6 +183,25 @@ body {
     text-align: center;
     line-height: 29px;
     color: #898989;
+}
+
+@media (max-width: 800px) {
+    #about-section h2 {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        font-family: var(--pops);
+        font-weight: 400;
+        color: #858585;
+    }
+    #about-section div p {
+        font-size: 1em;
+        letter-spacing: 1px;
+        font-family: var(--monts);
+        font-weight: 300;
+        text-align: center;
+        line-height: 29px;
+        color: #898989;
+    }
 }
 
 /**** ABOUT SECTION ****/
@@ -259,7 +324,7 @@ body {
     background-color: #D9D9D9;
 }
 #demo-feature-div {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
@@ -298,6 +363,9 @@ body {
 }
 
 @media (max-width: 800px) {
+    #features h2 {
+        font-size: 1.5em;
+    }
     .qoute-block {
         border: 0 solid transparent;
         padding: 1.5rem 1rem;
