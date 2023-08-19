@@ -140,8 +140,13 @@ nav ul {
     color: white;
 }
 @media (max-width: 800px) {
+    #hero-section {
+        position: relative;
+        min-height: 60vh;
+        gap: 1rem;
+    }
     .hero-content h1 {
-        font-size: 1.4em;
+        font-size: 1.3em;
         letter-spacing: 2px;
         font-family: var(--monts);
         font-weight: 600;
@@ -151,8 +156,9 @@ nav ul {
         font-size: 1em;
         letter-spacing: 1.5px;
         font-family: var(--pops);
+        width:80%;
         line-height: 28px;
-        font-weight: 200;
+        font-weight: 300;
         color: #787777e0
     }
 }
@@ -260,7 +266,6 @@ nav ul {
     font-family: var(--pops);
     font-weight: 400;
 }
-
 .feature-img-div {
     width: 50%;
 }
