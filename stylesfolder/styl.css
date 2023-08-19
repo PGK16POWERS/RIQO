@@ -39,7 +39,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8f6f6;
+    background-color: #ffffff;
     z-index: 99999
 }
 #menu-bar, #close {
@@ -57,7 +57,7 @@ nav {
     border: 0 solid transparent;
     border-radius: 5px;
     padding: 1rem;
-    background-color: #f8f6f6;
+    background-color: #ffffff;
     width: 100%;
     left: 0;
     text-align: center;
@@ -72,6 +72,7 @@ nav ul {
 .header-link {
     font-family: var(--pops);
     font-size: 1.5em;
+    font-weight: 300;
     letter-spacing: 2px;
     color: rgb(150, 150, 150);
 }
@@ -142,7 +143,7 @@ nav ul {
 @media (max-width: 800px) {
     #hero-section {
         position: relative;
-        min-height: 60vh;
+        min-height: 50vh;
         gap: 1rem;
     }
     .hero-content h1 {
@@ -154,9 +155,9 @@ nav ul {
     }
     .hero-content p {
         font-size: 1em;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         font-family: var(--pops);
-        width:80%;
+        width:100%;
         line-height: 28px;
         font-weight: 300;
         color: #787777e0
@@ -171,7 +172,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    margin: 3rem 0
+    padding: 5rem 0;
 }
 #about-section h2 {
     font-size: 1.8em;
@@ -191,7 +192,7 @@ nav ul {
     font-size: 1.2em;
     letter-spacing: 1px;
     font-family: var(--monts);
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     line-height: 29px;
     color: #898989;
@@ -224,7 +225,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 0 0 5rem;
     gap: 1rem;
 }
 #features h2 {
@@ -244,7 +245,7 @@ nav ul {
     font-size: 1em;
     letter-spacing: 1px;
     font-family: var(--monts);
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
     line-height: 25px;
 }

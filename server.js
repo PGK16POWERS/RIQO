@@ -14,6 +14,9 @@ app.get("/", (req,res) => {
     res.render("index.ejs")
 });
 
+app.get("privacypolicy", (req,res)=> {
+    res.render("privacypol.ejs");
+})
 
 app.listen(2300, () => {
     console.log("Up it like Its cheese");

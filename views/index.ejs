@@ -10,35 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script defer src="indexFunc.js" type="module"></script>
+    <script defer src="demosect.js" type="module"></script>
 </head> 
 <body>
-    <div id="header">
-        <img src="" alt="" class="brand-logo">
-        <span class="material-symbols-rounded" id="menu-bar">
-            menu
-        </span>
-        <span class="material-symbols-rounded" id="close">
-            close
-        </span>
-        <nav>
-            <ul>
-                <li><a href="" class="header-link">Login</a></li>
-                <li><a href="" class="header-link">RIQO PRO+</a></li>
-                <li><a href="" class="header-link">Donate</a></li>
-            </ul>
-        </nav>
-    </div>
+    <%- include("partials/header.ejs")%>
 
     <section id="hero-section">
         <div class="img-div">
-            <img src="riqoReloaded.svg" alt="" class="hero-img">
+            <img src="riqoReloaded.svg" alt="" loading="eager" class="hero-img">
         </div>
 
         <div class="hero-content">
             <h1><span class="dark-orange">Shoot</span> your <span class="dark-orange">Shot </span>and <span class="dark-orange">Score</span></h1>
-            <p>Don't be the guy with no rizz, boss up<br> 
-            with RIQO and start pulling them by<br> 
-            the boat load.
+            <p><span style="color:rgb(252, 86, 86)">Don't</span> be the <span style="color:dodgerblue;">guy</span> with <span style="color:rgb(252, 86, 86)">no rizz</span>, <span style="color:orange">boss up</span><br> 
+            with <span style="color:dodgerblue;">RIQO</span> and <span style="color:green">start pulling them in</span> by<br> 
+            the <span style="color:saddlebrown">boat load.</span>
             </p>
         </div>
 
@@ -60,22 +46,22 @@
 
         <div class="features-div">
             <div>
-                <img src="7.png" alt="" class="feature-img-div">
+                <img src="7.png" alt="" loading="lazy" class="feature-img-div">
                 <h3>Weekly Updates</h3>
                 <p>Expect the unexpected, with weekly updates to your content, we'll keep you distracted fr fr...</p>
             </div>
             <div>
-                <img src="2.svg" alt="" class="feature-img-div">
+                <img src="2.svg" alt="" loading="lazy" class="feature-img-div">
                 <h3>Exciting Features</h3>
                 <p>Original features and functionalities all for your enjoyment and use</p>
             </div>
             <div>
-                <img src="3.svg" alt="" class="feature-img-div">
+                <img src="3.svg" alt="" loading="lazy" class="feature-img-div">
                 <h3>Realtime Data</h3>
                 <p>RIQO's features are rooted in the times, meaning, our features are tailor made for the times</p>
             </div>
             <div>
-                <img src="22.png" alt="" class="feature-img-div">
+                <img src="22.png" alt="" loading="lazy" class="feature-img-div">
                 <h3>We just got it</h3>
                 <p>Ey man we just got it, fun features, crazy challenges, thought provoking rizz 🤷🏽‍♂️</p>
             </div>
@@ -93,7 +79,7 @@
             
             <div id="demo-feature-div">
                 <div class="qoute-block">
-                    <p>"click generate"</p>
+                    <p class="innerhtml">"click generate"</p>
                 </div>
                 <button type="button" id="gen-test-btn" class="gen-test">Generate</button>
             </div>
@@ -131,7 +117,7 @@
         <% const getHour = time.getHours();%>
         <% const getMintes = time.getMinutes();%>
         <% const getTime = getHour + ":" + getMintes %>
-        <p>© <%- getTime%> Marjella Marketing Media.</p>
+        <p>© <%= getTime%> Marjella Marketing Media.%></p>
     </div>
 
 </body>
