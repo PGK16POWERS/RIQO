@@ -18,6 +18,10 @@ app.get("/privacypolicy", (req,res)=> {
     res.render("privacypol.ejs");
 })
 
+app.get(["/sign","/login"], (req,res)=> {
+    res.render("sign-log.ejs");
+})
+
 app.listen(2300, () => {
     console.log("Up it like Its cheese");
 })

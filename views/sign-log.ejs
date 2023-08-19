@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="styl.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script defer src="indexFunc.js" type="module"></script>
+        <script defer src="demosect.js" type="module"></script>
+    </head> 
+<body class="body-forms">
+
+    <section id="sign-in-form">
+        <form action="/sign-up" method="post" id="form">
+
+            <img src="" alt="brand-logo">
+
+            <div class="form-div-parent">
+
+                <div class="div-child">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="errmess"></div>
+                </div>
+
+                <div class="div-child">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname" required>
+                    <div class="errmess"></div>
+                </div>
+
+                <div class="div-child">
+                    <label for="number">Number</label>
+                    <input type="tel" id="number" name="number" required>
+                    <div class="errmess"></div>
+                </div>
+
+                <div class="div-child">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="errmess"></div>
+                </div>
+
+            </div>
+            
+            <div class="checkbox-parent">
+
+                <div class="checkbox-child">
+                    <input type="checkbox" name="" id="" required>
+                    <p>I agree to RIQO's Terms of use.</p>
+                </div>
+
+                <div class="checkbox-child">
+                    <input type="checkbox" name="" id="" required>
+                    <p>I agree to RIQO's <a href="" class="">Terms and Agreements.</a></p>
+                </div>
+
+                <div class="checkbox-child">
+                    <input type="checkbox" name="" id="" >
+                    <p>I want to get Exclusive updates to feature releases.</p>
+                </div>
+
+            </div>
+
+            <button type="submit" id="submitButton" class="sub-btn">Submit</button>
+
+            <a href="login" class="form-links">Already have an account?</a>
+        </form>
+    </section>
+
+    <section id="log-in-form">
+        <form action="/login" method="post" id="form">
+
+            <img src="" alt="brand-logo">
+
+            <div class="form-div-parent">
+
+                <div class="div-child">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="errmess"></div>
+                </div>
+
+                <div class="div-child">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="errmess"></div>
+                </div>
+
+            </div>
+
+            <button type="submit" id="loginButton" class="sub-btn">Login</button>
+            <a class="form-links">Don't have an account?</a>
+        </form>
+    </section>
+    
+</body>
+</html>
