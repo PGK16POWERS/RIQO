@@ -1,10 +1,13 @@
-export function burgerMenu() {
-   const burgerMenu = document.querySelector(".burger-menu");
+const textBlock = document.querySelectorAll(".faq-block");
 
-burgerMenu.addEventListener("click", () => {
-    const nav = document.querySelector("nav");
-    
-    nav.classList.toggle("show");
-}); 
-}
+textBlock.forEach(block => {
+    const h3Header = block.querySelector(".faq3-header");
+    const paragraph = block.querySelector(".local-para");
+
+    h3Header.addEventListener("click", ()=> {
+        paragraph.classList.toggle("showblock")
+    })
+})
+
+//alert("Connected")
 

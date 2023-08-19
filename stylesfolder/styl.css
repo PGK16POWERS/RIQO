@@ -26,6 +26,14 @@ body {
 .showflex {
     display: flex !important;
 }
+.showblock {
+    display: block !important;
+}
+.shownone {
+    display: none !important;
+}
+
+
 /**** HEADER SECTION ****/
 #header {
     position:-webkit-sticky;
@@ -68,13 +76,21 @@ nav ul {
     align-items: center;
     gap: 2rem;
 }
-
 .header-link {
     font-family: var(--pops);
     font-size: 1.5em;
     font-weight: 300;
     letter-spacing: 2px;
     color: rgb(150, 150, 150);
+}
+@media (max-wdidth: 800px) {
+    .header-link {
+        font-family: var(--pops);
+        font-size: 1.3em;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: rgb(150, 150, 150);
+    }
 }
 /**** HEADER SECTION ****/
 
@@ -192,7 +208,7 @@ nav ul {
     font-size: 1.2em;
     letter-spacing: 1px;
     font-family: var(--monts);
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     line-height: 29px;
     color: #898989;
@@ -210,13 +226,12 @@ nav ul {
         font-size: 1em;
         letter-spacing: 1px;
         font-family: var(--monts);
-        font-weight: 300;
+        font-weight: 400;
         text-align: center;
         line-height: 29px;
         color: #898989;
     }
 }
-
 /**** ABOUT SECTION ****/
 
 /**** FEATURES SECTION ****/
@@ -349,7 +364,6 @@ nav ul {
     margin: 2rem 0;
     width: 100%;
 }
-
 .qoute-block {
     border: 0 solid transparent;
     padding: 1rem;
@@ -358,14 +372,12 @@ nav ul {
     border-radius: 5px;
     background-color:  #D9D9D9;
 }
-
 .qoute-block p {
     font-size: 1.2em;
     font-family: var(--monts);
     letter-spacing: 1px;
     color: white;
 }
-
 .gen-test {
     padding:16px;
     width: 200px;
@@ -438,6 +450,47 @@ footer div ul {
     font-weight: 400;
     color: #75650b;
 }
-
-
 /**** YAMA LAST DIV ****/
+
+/**** PRIVACY POLICY PAGE ****/
+.pri-pol {
+    padding: 2rem 1rem;
+    
+    width: 100%;
+}
+.faq-header {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-family: var(--pops);
+    font-weight: 400;
+}
+.faq3-header {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-family: var(--pops);
+    font-weight: 500;
+    cursor: pointer;
+}
+.local-para {
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-family: var(--pops);
+    font-weight: 400;
+}
+.faq-que {
+    padding-top:1rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.faq-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.local-para {
+    display: none;
+}
+
+
+/**** PRIVACY POLICY PAGE ****/

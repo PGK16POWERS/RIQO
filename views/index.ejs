@@ -13,7 +13,22 @@
     <script defer src="demosect.js" type="module"></script>
 </head> 
 <body>
-    <%- include("partials/header.ejs")%>
+    <div id="header">
+        <img src="" alt="" class="brand-logo">
+        <span class="material-symbols-rounded" id="menu-bar">
+            menu
+        </span>
+        <span class="material-symbols-rounded" id="close">
+            close
+        </span>
+        <nav>
+            <ul>
+                <li><a href="" class="header-link">Login</a></li>
+                <li><a href="" class="header-link">RIQO PRO+</a></li>
+                <li><a href="/privacypolicy" class="header-link">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <section id="hero-section">
         <div class="img-div">
@@ -88,37 +103,7 @@
 
     </section>
 
-    <footer>
-        <div>
-            <h4>Dev Contact Details</h4>
-            <ul>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Whatsapp</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Privacy Stuff</h4>
-            <ul>
-                <li>Terms of use</li>
-                <li>Privacy Policy</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Tech Stuff</h4>
-            <ul>
-                <li>API</li>
-            </ul>
-        </div>
-    </footer>
-
-    <div class="yama-last">
-        <% const time = new Date();%>
-        <% const getHour = time.getHours();%>
-        <% const getMintes = time.getMinutes();%>
-        <% const getTime = getHour + ":" + getMintes %>
-        <p>© <%= getTime%> Marjella Marketing Media.%></p>
-    </div>
+    <%- include("partials/footer.ejs")%>
 
 </body>
 </html>

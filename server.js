@@ -14,7 +14,7 @@ app.get("/", (req,res) => {
     res.render("index.ejs")
 });
 
-app.get("privacypolicy", (req,res)=> {
+app.get("/privacypolicy", (req,res)=> {
     res.render("privacypol.ejs");
 })
 
