@@ -89,11 +89,17 @@ nav ul {
     gap: 2rem;
 }
 .img-div {
+    position: relative;
     width: 400px;
     height: 500px;
-    background-color: grey;
     border: 0 solid transparent;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-img {
+    width: 80%;
 }
 .hero-content {
     text-align: center;
@@ -237,6 +243,7 @@ nav ul {
     line-height: 25px;
 }
 .features-div div {
+    position: relative;
     border: 0 solid transparent;
     border-radius: 5px;
     padding: 1rem;
@@ -252,6 +259,10 @@ nav ul {
     letter-spacing: 1px;
     font-family: var(--pops);
     font-weight: 400;
+}
+
+.feature-img-div {
+    width: 50%;
 }
 
 .features-div div:nth-child(1) {
